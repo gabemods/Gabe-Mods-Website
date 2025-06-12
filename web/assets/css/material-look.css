@@ -1,0 +1,99 @@
+:root {
+    --md-icon-font: Material Symbols Rounded;
+    --md-icon-button-hover-state-layer-color: #c6c6c6;
+    --md-icon-button-hover-state-layer-opacity: 0.08;
+    --md-icon-button-pressed-state-layer-color: #c6c6c6;
+    --md-icon-button-pressed-state-layer-opacity: 0.12;
+     --md-list-item-supporting-text-color: #fff;
+}
+
+
+md-list-item {
+    border-radius: 50px;
+    --md-list-item-supporting-text-color: #fff;
+    padding: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #131313;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: #1f1f1f;
+    color: #c6c6c6;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header .right-side, 
+header .left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brand-name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.menu-container {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: 100vh;
+    width: 260px;
+    background: #1f1f1f;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    z-index: 1000;
+}
+
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container a {
+    display: block;
+    padding: 10px 25px;
+    color: #c6c6c6;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.2s;
+    border-radius: 50px;
+}
+
+.menu-container a:hover {
+    background: rgba(198,198,198,0.08);
+    color: #fff;
+}
