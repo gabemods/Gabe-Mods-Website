@@ -4,7 +4,21 @@
     --md-icon-button-hover-state-layer-opacity: 0.08;
     --md-icon-button-pressed-state-layer-color: #c6c6c6;
     --md-icon-button-pressed-state-layer-opacity: 0.12;
-     --md-list-item-supporting-text-color: #fff;
+    --md-list-item-supporting-text-color: #fff;
+    --md-sys-color-outline-variant: #BEC9C8;
+    --md-divider-thickness: 1px;
+    --md-filled-button-container-color: #9DD4FE;
+    --md-filled-button-label-text-color: #000000;
+    --md-filled-button-icon-color: #000000;
+    --md-filled-button-hover-icon-color: #000;
+    --md-filled-button-hover-label-text-color: #000;
+    --md-filled-button-hover-state-layer-color: #ffffff4f;
+    --md-filled-button-hover-state-layer-opacity: 0.2;
+    --md-filled-button-focus-icon-color: #000;
+    --md-filled-button-focus-label-text-color: #000;
+    --md-filled-button-pressed-icon-color: #000000;
+    --md-filled-button-pressed-label-text-color: #000;
+    --md-filled-button-container-height: 50px;
 }
 
 
@@ -21,6 +35,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: #131313;
+    color: #c6c6c6;
 }
 
 header {
@@ -31,6 +46,8 @@ header {
     height: 70px;
     background-color: #1f1f1f;
     color: #c6c6c6;
+    position: fixed;
+    z-index: 999;
 }
 
 header .container {
@@ -96,4 +113,98 @@ header .left-side {
 .menu-container a:hover {
     background: rgba(198,198,198,0.08);
     color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px);
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.top h1 {
+    font-size: 45px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.top .name {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    background-color: transparent;
+    z-index: 1000;
+    margin-top: 400px;
+}
+
+footer .container {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a {
+    color: #a9d3fb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.color-hightlight {
+    color: #a9d3fb;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    margin-top: 160px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 240px;
+    height: 500px;
+    background: #222;
+    border-radius: 32px;
+    border: 1px solid #44444456;
+    position: relative;
+    margin-top: 230px;
+}
+
+.phone-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
 }
