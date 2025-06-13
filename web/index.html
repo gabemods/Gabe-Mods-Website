@@ -2,39 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <meta name="google-site-verification" content="HihCOsgH0UVQPbqo7pMEgDNXIXR16hIm907pXZPI3w8" />
+  <meta name="google-site-verification" content="HihCOsgH0UVQPbqo7pMEgDNXIXR16hIm907pXZPI3w8">
   <title>Gabe Mods</title>
   <meta name="description" content="Gabe Mods provides high-quality, malware-free mods for Android and iOS including Geometry Dash, Subway Surfers, Grand Battle Royale and more.">
   <meta name="keywords" content="Gabe Mods, Android mods, iOS mods, Geometry Dash mod, Spotify mod, APK downloads, game mods">
   <meta name="author" content="Gabe Mods">
   <meta property="og:title" content="Gabe Mods">
   <meta property="og:description"content="High-quality Android and iOS mods. Safe, free, and easy to install.">
-  <meta property="og:image" content="assets/images/IMG_7790.jpeg">
+  <meta property="og:image" content="assets/images/favicon/android-icon-192x192.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="google-site-verification" content="HihCOsgH0UVQPbqo7pMEgDNXIXR16hIm907pXZPI3w8"/>
-  <meta name="msvalidate.01" content="D8E2192242F2093B4379471689E3082A"/>
+  <meta name="google-site-verification" content="HihCOsgH0UVQPbqo7pMEgDNXIXR16hIm907pXZPI3w8">
+  <meta name="msvalidate.01" content="D8E2192242F2093B4379471689E3082A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="assets/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="assets/css/material-look.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <script type="importmap">
     {
       "imports": {
@@ -107,7 +106,6 @@
     <section>
 
     </section>
-
   </main>
 
   <div class="line"></div>
@@ -144,23 +142,6 @@
     </ul>
   </nav>
 
-  <script>
-    const menuButtonContainer = document.getElementById('menu-button');
-    const menuButton = menuButtonContainer.querySelector('md-icon');
-    const menuContainer = document.querySelector('.menu-container');
-
-    menuButtonContainer.addEventListener('click', function() {
-      if (menuButton.textContent.trim() === 'menu') {
-        menuButton.textContent = 'close';
-        menuContainer.style.transform = 'translateX(0)';
-      } else {
-        menuButton.textContent = 'menu';
-        menuContainer.style.transform = 'translateX(-100%)';
-      }
-    });
-
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

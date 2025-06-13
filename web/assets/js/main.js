@@ -1,15 +1,16 @@
-const menuToggle = document.getElementById('menu-toggle');
-const sideMenu = document.getElementById('side-menu');
-const overlay = document.getElementById('overlay');
+const menuButtonContainer = document.getElementById('menu-button');
+const menuButton = menuButtonContainer.querySelector('md-icon');
+const menuContainer = document.querySelector('.menu-container');
 
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('open');
-  sideMenu.classList.toggle('open');
-  overlay.classList.toggle('show');
+menuButtonContainer.addEventListener('click', function() {
+  if (menuButton.textContent.trim() === 'menu') {
+    menuButton.textContent = 'close';
+    menuContainer.style.transform = 'translateX(0)';
+  } else {
+    menuButton.textContent = 'menu';
+    menuContainer.style.transform = 'translateX(-100%)';
+  }
 });
 
-overlay.addEventListener('click', () => {
-  menuToggle.classList.remove('open');
-  sideMenu.classList.remove('open');
-  overlay.classList.remove('show');
-});
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
