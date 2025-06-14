@@ -19,8 +19,10 @@
     --md-filled-button-pressed-icon-color: #000000;
     --md-filled-button-pressed-label-text-color: #000;
     --md-filled-button-container-height: 50px;
+    --md-dialog-container-color: #1f1f1f;
+    --md-dialog-headline-color: #a9d3fb;
+    --md-dialog-supporting-text-color: #fff;
 }
-
 
 md-list-item {
     border-radius: 50px;
@@ -129,7 +131,6 @@ main {
     align-items: center;
     justify-content: center;
     text-align: start;
-    margin-top: px;
 }
 
 .button-container {
@@ -272,15 +273,41 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 95%;
     gap: 10px;
 }
 
 .setting-item {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%; 
+}
+
+#theme {
+    appearance: none;
+    background-color: #23272f;
+    padding: 12px 18px;
+    color: #a9d3fb;
+    border: 1.5px solid #3a3a3a;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 600;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 2px 8px 0 #00000022;
+    cursor: pointer;
+}
+
+#theme:focus {
+    border-color: #a9d3fb;
+    box-shadow: 0 0 0 2px #a9d3fb44;
+}
+
+#theme option {
+    background: #23272f;
+    color: #a9d3fb;
 }
 
 #settings-button {
@@ -289,5 +316,5 @@ a {
 }
 
 .setting-title {
-    font-size: 15px;
+    font-size: 20px;
 }

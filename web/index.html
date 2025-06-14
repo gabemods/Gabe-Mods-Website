@@ -170,24 +170,14 @@
       <div class="settings-container">
         <div class="setting-item">
           <span class="setting-title">Theme</span>
-          <md-outlined-select style="transform: scale(0.65);">
-            <md-select-option selected value="system">
-              <div slot="headline">System</div>
-            </md-select-option>
-            <md-select-option value="light">
-              <div slot="headline">Light</div>
-            </md-select-option>
-            <md-select-option value="dark">
-              <div slot="headline">Dark</div>
-            </md-select-option>
-          </md-outlined-select>
+          <select name="theme" id="theme">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
         </div>
       </div>
     </form>
-
-    <div slot="actions">
-      <md-text-button form="form-id">Ok</md-text-button>
-    </div>
   </md-dialog>
 
   <script src="assets/js/main.js"></script>
