@@ -48,6 +48,8 @@ header {
     color: #c6c6c6;
     position: fixed;
     z-index: 999;
+    top: 0;
+    left: 0;
 }
 
 header .container {
@@ -119,10 +121,10 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 70px);
     align-items: center;
     justify-content: center;
     text-align: start;
+    margin-top: px;
 }
 
 .button-container {
@@ -156,7 +158,7 @@ footer {
     height: 80px;
     background-color: transparent;
     z-index: 1000;
-    margin-top: 400px;
+    margin-top: 40px;
 }
 
 footer .container {
@@ -184,8 +186,8 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 100px;
-    margin-top: 160px;
+    gap: 170px;
+    margin-top: 80px;
 }
 
 .phone-container {
@@ -194,12 +196,12 @@ a {
     justify-content: center;
     padding: 8px;
     width: 240px;
-    height: 500px;
+    height: 470px;
     background: #222;
     border-radius: 32px;
     border: 1px solid #44444456;
     position: relative;
-    margin-top: 230px;
+    top: 100px;
 }
 
 .phone-container img {
@@ -207,4 +209,55 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+}
+
+#developers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    margin-top: 90px;
+    gap: 20px;
+}
+
+#developers h2 {
+    text-align: start;
+    width: 92%;
+    font-size: 22px;
+}
+
+.cards-conatiner {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 20px;
+}
+
+.card-conatiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 15px;
+    width: 100%;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.card-conatiner img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.card-conatiner .developer-name {
+    font-weight: bold; 
 }

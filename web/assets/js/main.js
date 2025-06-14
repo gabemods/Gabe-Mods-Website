@@ -13,4 +13,3 @@ menuButtonContainer.addEventListener('click', function() {
 });
 
 document.getElementById('current-year').textContent = new Date().getFullYear();
-
