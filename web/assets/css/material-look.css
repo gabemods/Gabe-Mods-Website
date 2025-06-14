@@ -85,14 +85,19 @@ header .left-side {
     transform: translateX(-100%);
     transition: transform 0.3s cubic-bezier(.4,0,.2,1);
     z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-container ul {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 30px;
     gap: 10px;
     height: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -260,4 +265,29 @@ a {
 
 .card-conatiner .developer-name {
     font-weight: bold; 
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 10px;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+
+#settings-button {
+    user-select: none;
+    cursor: pointer;
+}
+
+.setting-title {
+    font-size: 15px;
 }

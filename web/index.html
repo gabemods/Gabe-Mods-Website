@@ -158,10 +158,37 @@
         <a href="">About</a>
       </li>
       <li>
-        <a href="">Settings</a>
+        <a id="settings-button">Settings</a>
       </li>
     </ul>
   </nav>
+
+  <md-dialog id="settings-menu">
+    <div slot="headline">Settings</div>
+
+    <form slot="content" id="form-id" method="dialog">
+      <div class="settings-container">
+        <div class="setting-item">
+          <span class="setting-title">Theme</span>
+          <md-outlined-select style="transform: scale(0.65);">
+            <md-select-option selected value="system">
+              <div slot="headline">System</div>
+            </md-select-option>
+            <md-select-option value="light">
+              <div slot="headline">Light</div>
+            </md-select-option>
+            <md-select-option value="dark">
+              <div slot="headline">Dark</div>
+            </md-select-option>
+          </md-outlined-select>
+        </div>
+      </div>
+    </form>
+
+    <div slot="actions">
+      <md-text-button form="form-id">Ok</md-text-button>
+    </div>
+  </md-dialog>
 
   <script src="assets/js/main.js"></script>
 </body>
