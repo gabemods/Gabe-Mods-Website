@@ -19,7 +19,7 @@ html[data-theme="light"] {
     --color-hightlight-color: #1976d2;
     --phone-container-background-color: #f0f4f8;
     --phone-container-border: #cfd8dc;
-    --card-conatiner-background-color: #ffffff;
+    --card-container-background-color: #ffffff;
     --theme-background-color: #f7fafd;
     --theme-color: #1976d2;
     --theme-border: #e0e0e0;
@@ -59,7 +59,7 @@ html[data-theme="dark"] {
     --color-hightlight-color: #a9d3fb;
     --phone-container-background-color: #222;
     --phone-container-border: #44444456;
-    --card-conatiner-background-color: #2b2b2b;
+    --card-container-background-color: #2b2b2b;
     --theme-background-color: #23272f;
     --theme-color: #a9d3fb;
     --theme-border: #3a3a3a;
@@ -290,26 +290,26 @@ a {
     font-size: 22px;
 }
 
-.cards-conatiner {
+.cards-container {
     display: flex;
     flex-direction: column;
     width: 85%;
     gap: 20px;
 }
 
-.card-conatiner {
+.card-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
     padding: 15px;
     width: 100%;
-    background-color: var(--card-conatiner-background-color);
+    background-color: var(--card-container-background-color);
     border-radius: 20px;
     gap: 20px;
 }
 
-.card-conatiner img {
+.card-container img {
     width: 70px;
     height: 70px;
     border-radius: 20px;
@@ -321,7 +321,7 @@ a {
     gap: 3px;
 }
 
-.card-conatiner .developer-name {
+.card-container .developer-name {
     font-weight: bold; 
 }
 
